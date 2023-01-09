@@ -1,0 +1,21 @@
+$tablet: 768;
+$desktop: 1200;
+$wide-screen: 1440;
+
+@mixin tablet {
+  @media only screen and (min-width: (($tablet + 1) * 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: (($desktop) * 1px)) {
+    @content;
+  }
+}
+
+@mixin wide-screen {
+  @media only screen and (min-width: (($wide-screen + 1) * 1px)) {
+    @content;
+  }
+}

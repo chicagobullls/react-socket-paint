@@ -1,0 +1,10 @@
+@use './_media';
+
+@use './base.scss';
+
+@use './reset.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+}
